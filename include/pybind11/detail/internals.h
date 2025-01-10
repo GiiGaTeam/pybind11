@@ -62,7 +62,7 @@ using ExceptionTranslator = void (*)(std::exception_ptr);
 
 PYBIND11_NAMESPACE_BEGIN(detail)
 
-constexpr const char *internals_function_record_capsule_name = "pybind11_function_record_capsule";
+constexpr inline const char *internals_function_record_capsule_name = "pybind11_function_record_capsule";
 
 // Forward declarations
 inline PyTypeObject *make_static_property_type();
